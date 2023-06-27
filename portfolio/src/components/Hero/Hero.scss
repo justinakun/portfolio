@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+
+.hero-container {
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        $primaryMain 0%,
+        $primaryMain 67%,
+        $secondaryMain 67%,
+        $secondaryMain 100%
+    );
+}

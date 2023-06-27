@@ -1,0 +1,39 @@
+.single-card-container {
+    min-width: 450px;
+    min-height: 380px;
+    display: grid;
+    background-color: white;
+    border-radius: 3px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .image-container {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+        .the-logo{
+            width: 70px;          
+        }
+    }
+
+    .description-container {
+        background-color: #FFFFFF;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+
+        .description-container-text {
+            padding-top: 2em;
+            padding-left: 2em;
+            color: #474747;        
+        }
+    }
+}

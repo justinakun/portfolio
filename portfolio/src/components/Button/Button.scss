@@ -2,7 +2,7 @@
 
 .styled-button-container{    
     background-color: transparent;
-    border: 1px solid $outlinedButtonColor;
+    border: 1px solid $primaryMain;
     width: 250px;  
     display: flex;
     justify-content: center;
@@ -14,18 +14,18 @@
         font-weight: bold;
         letter-spacing: 0.1em;
         font-size: 0.9em;
-        color: $outlinedButtonColor;        
+        color: $primaryMain;        
         background-color: transparent;
         border: none;
     }
 
     .right-arrow {
         font-size: 1.3rem;  
-        color: $outlinedButtonColor;      
+        color: $primaryMain;      
     }
 
     &:hover {
-        background-color: $outlinedButtonColor;
+        background-color: $primaryMain;
         cursor: pointer;
         
 
