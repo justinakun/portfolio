@@ -1,0 +1,37 @@
+@import "../../styles/colors.scss";
+
+.styled-button-container{    
+    background-color: transparent;
+    border: 1px solid $outlinedButtonColor;
+    width: 250px;  
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+
+    .styled-button {
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-size: 0.9em;
+        color: $outlinedButtonColor;        
+        background-color: transparent;
+        border: none;
+    }
+
+    .right-arrow {
+        font-size: 1.3rem;  
+        color: $outlinedButtonColor;      
+    }
+
+    &:hover {
+        background-color: $outlinedButtonColor;
+        cursor: pointer;
+        
+
+        .styled-button, .right-arrow {
+            color: white;
+            cursor: pointer;            
+        }
+    }
+}
