@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.logo-container {
+    color: $secondaryMain;
+    padding-left: 4em;
+
+    h1 {
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+}

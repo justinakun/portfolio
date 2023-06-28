@@ -1,0 +1,47 @@
+@import "../../styles/colors.scss";
+
+.navbar-container {
+    background-color: white;
+    border-radius: 3px;
+    opacity: 0.8;
+    color: $primaryMain;
+    display: flex-box;
+    padding-left: 2em;
+    height: 600px;
+    width: 380px;
+
+
+    .navbar-items-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        justify-items: start;
+        padding-top: 5em;
+
+        a {
+            color: $primaryMain;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: lighter; 
+            
+            &:hover {
+                color: rgb(167, 121, 167);
+            }
+        }
+
+        
+    } 
+
+    .say-hello-container{
+        font-size: 1.5em;
+        padding-top: 3em;
+        display: grid;
+        justify-items: start;
+
+        .title{
+            color: #cbc9e2;
+            padding-bottom: 1em;         
+        }
+    } 
+}
+
