@@ -30,6 +30,15 @@
                 input::placeholder {
                     color: $footerPurple;
                 }
+
+                input:focus {
+                    outline: none;
+                    padding-top: 1em; 
+                  }
+            
+                  input:focus::placeholder {
+                    color: transparent; 
+                  }
             }
         }
 
@@ -51,9 +60,33 @@
 
                 textarea::placeholder {
                     color: $footerPurple;
-                }
-          
+                    font-family: Arial, Helvetica, sans-serif;
+                }     
+                
+                textarea:focus {
+                    outline: none;
+                    padding-top: 1em; 
+                  }
+            
+                  textarea:focus::placeholder {
+                    color: transparent; 
+                  }
         }
-    
+
+        .submit-button {
+            display: flex;
+           justify-content: center;
+           padding-top: 2em;
+        }
+
+        .alert-container {
+            background-color: rgb(126, 189, 126);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 1em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
     
 }

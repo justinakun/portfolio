@@ -2,14 +2,17 @@ import { saveMessage } from "../../api/messages";
 import { useState } from "react";
 import "./Contacts.scss";
 import Button from "../Button/Button";
+import Alert from "../Alert/Alert";
 
 const ContactsForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [messageText, setMessageText] = useState("");
+  const [sentMessage, setSentMessage] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const message = { name, email, messageText };
 
     const handleNewMessage = (message) => {
@@ -21,6 +24,9 @@ const ContactsForm = () => {
         })
         .catch((error) => {
           console.error(error);
+        })
+        .finally(() => {
+          setSentMessage(true);
         });
     };
 
@@ -49,7 +55,7 @@ const ContactsForm = () => {
             name="email"
             required
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email Address"
+            placeholder="Enter your email Address"
           ></input>
         </div>
       </div>
@@ -60,12 +66,18 @@ const ContactsForm = () => {
           name="story"
           required
           onChange={(e) => setMessageText(e.target.value)}
-          placeholder={`Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?`}
+          placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"
         ></textarea>
       </div>
       <div className="submit-button">
         <Button title="Shoot" type="submit" onClick={handleSubmit} />
       </div>
+
+      {sentMessage && (
+        <div className="alert-container">
+          <Alert alertMessage="Your message has been successfully sent!" />
+        </div>
+      )}
     </form>
   );
 };
