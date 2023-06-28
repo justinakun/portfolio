@@ -1,7 +1,9 @@
+import "./SingleWork.scss";
+
 const SingleWork = () => {
   return (
-    <div>
-      <h1>Coming soon</h1>
+    <div className="single-work-container">
+      <h1>Coming soon...</h1>
     </div>
   );
 };

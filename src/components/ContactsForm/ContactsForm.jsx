@@ -60,10 +60,10 @@ const ContactsForm = () => {
         </div>
       </div>
       <div className="text-area">
-        <label htmlFor="story">Your Message</label>
+        <label htmlFor="message">Your Message</label>
         <textarea
-          id="story"
-          name="story"
+          id="message"
+          name="message"
           required
           onChange={(e) => setMessageText(e.target.value)}
           placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"
