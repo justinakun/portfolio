@@ -1,0 +1,102 @@
+@import "../../styles/colors.scss";
+
+.message-me-form {
+  display: flex-box;
+  justify-content: center;
+  width: 100%;
+
+  Button {
+    position: relative;
+    left: 270px;
+  }
+
+  .inputs {
+    display: grid;
+    gap: 3em;
+    padding-bottom: 3em;
+    grid-template-columns: 1fr 1fr;
+
+    .name-input,
+    .email-input {
+      display: grid;
+
+      .error {
+        color: red;
+      }
+
+      label {
+        color: rgb(180, 180, 180);
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid $footerPurple;
+        background-color: transparent;
+        color: $footerPurple;
+        padding-bottom: 1em;
+        padding-top: 2em;
+      }
+
+      input::placeholder {
+        color: $footerPurple;
+      }
+
+      input:focus {
+        outline: none;
+        padding-top: 1em;
+      }
+
+      input:focus::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  .text-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 2em;
+    color: green;
+
+    label {
+      color: rgb(180, 180, 180);
+    }
+
+    textarea {
+      border: none;
+      border-bottom: 1px solid $footerPurple;
+      background-color: transparent;
+      padding-bottom: 1em;
+      padding-top: 1.5em;
+      font-family: Arial, Helvetica, sans-serif; 
+      color: $footerPurple;
+    }
+
+    .error {
+      color: red;
+    }
+
+    textarea::placeholder {
+      color: $footerPurple;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    textarea:focus {
+      outline: none;
+      padding-top: 1em;
+    }
+
+    textarea:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  .alert-container {
+    background-color: rgb(126, 189, 126);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}

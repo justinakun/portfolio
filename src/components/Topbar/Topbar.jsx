@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Topbar = ({ className }) => {
   return (
     <div className={`topbar-container ${className}`}>
-      <Logo title="justina"></Logo>
+      <Logo title="Justina"></Logo>
       <Burger></Burger>
     </div>
   );

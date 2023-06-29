@@ -1,37 +1,33 @@
 @import "../../styles/colors.scss";
 
-.styled-button-container{    
-    background-color: transparent;
-    border: 1px solid $primaryMain;
-    width: 250px;  
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    align-items: center;
-    padding: 1rem;
-
     .styled-button {
+        background-color: transparent;
+        border: 1px solid $primaryMain;
+        width: 250px;  
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
         font-weight: bold;
         letter-spacing: 0.1em;
         font-size: 0.9em;
         color: $primaryMain;        
         background-color: transparent;
-        border: none;
-    }
 
-    .right-arrow {
-        font-size: 1.3rem;  
-        color: $primaryMain;      
-    }
-
-    &:hover {
+        .right-arrow {
+            font-size: 1.3rem;  
+            color: $primaryMain;      
+        }
+ 
+        &:hover {
         background-color: $primaryMain;
         cursor: pointer;
-        
+        color: white;        
 
-        .styled-button, .right-arrow {
-            color: white;
-            cursor: pointer;            
+            .right-arrow {
+                color: white;
+                cursor: pointer;            
+            }
         }
-    }
-}
+    }  

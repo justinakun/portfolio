@@ -4,12 +4,10 @@ import "./Button.scss";
 
 const Button = ({ title, type, onClick }) => {
   return (
-    <div className="styled-button-container" onClick={onClick}>
-      <button className="styled-button" type={type}>
-        {title.toUpperCase()}
-      </button>
-      <HiOutlineArrowNarrowRight className="right-arrow"></HiOutlineArrowNarrowRight>
-    </div>
+    <button className="styled-button" type={type} onClick={onClick}>
+      {title.toUpperCase()}
+      <HiOutlineArrowNarrowRight className="right-arrow" />
+    </button>
   );
 };
 
